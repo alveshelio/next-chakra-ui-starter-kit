@@ -29,8 +29,7 @@ function Home() {
           Dark
         </Heading>
         <Text fontSize="3xl" textAlign="center">
-          An opinionated, dark-themed Next.js &amp; Chakra UI GitHub repository
-          template
+          An opinionated, dark-themed Next.js &amp; Chakra UI GitHub repository template
         </Text>
         <Text>
           Hit the ground running with one <Code>yarn install</Code>.
@@ -59,27 +58,15 @@ function Home() {
             </ListItem>
             <ListItem>
               Hit the ground running with{' '}
-              <Link
-                href="https://nextjs.org"
-                isExternal
-                textDecoration="underline"
-              >
+              <Link href="https://nextjs.org" isExternal textDecoration="underline">
                 Next.js
               </Link>
               ,{' '}
-              <Link
-                href="https://www.typescriptlang.org/"
-                isExternal
-                textDecoration="underline"
-              >
+              <Link href="https://www.typescriptlang.org/" isExternal textDecoration="underline">
                 TypeScript
               </Link>{' '}
               &amp;{' '}
-              <Link
-                href="https://chakra-ui.com"
-                isExternal
-                textDecoration="underline"
-              >
+              <Link href="https://chakra-ui.com" isExternal textDecoration="underline">
                 Chakra UI
               </Link>{' '}
               with the dark theme as the default
@@ -95,16 +82,13 @@ function Home() {
           </Heading>
           <Stack>
             <Text>
-              After getting started with this GitHub repo template you have{' '}
-              Chakra UI ready to go and configured for Next.js.
+              After getting started with this GitHub repo template you have Chakra UI ready to go
+              and configured for Next.js.
             </Text>
+            <Text>The dark theme is configured to be the inital color mode.</Text>
             <Text>
-              The dark theme is configured to be the inital color mode.
-            </Text>
-            <Text>
-              The <em>full arsenal</em> of Chakra UI's features and components
-              is at your disposal in this Next.js app and configurable to your
-              wishes.
+              The <em>full arsenal</em> of Chakra UI's features and components is at your disposal
+              in this Next.js app and configurable to your wishes.
             </Text>
 
             <Text pb={2}>Oh, look! Chakra UI buttons:</Text>
@@ -122,12 +106,7 @@ function Home() {
             </Stack>
 
             <Text py={2}>Woah! A Chakra UI slider:</Text>
-            <Slider
-              pb={2}
-              aria-label="slider-ex-2"
-              colorScheme="pink"
-              defaultValue={30}
-            >
+            <Slider pb={2} aria-label="slider-ex-2" colorScheme="pink" defaultValue={30}>
               <SliderTrack>
                 <SliderFilledTrack />
               </SliderTrack>
@@ -143,9 +122,7 @@ function Home() {
               <Switch size="lg" colorScheme="pink" />
             </Stack>
 
-            <Text py={2}>
-              Damn, yo! Composed Chakra UI components for displaying data:
-            </Text>
+            <Text py={2}>Damn, yo! Composed Chakra UI components for displaying data:</Text>
             <Flex pb={2}>
               <Avatar src="https://bit.ly/sage-adebayo" />
               <Box ml="3">
@@ -181,21 +158,13 @@ function Home() {
           </Heading>
           <Stack>
             <Text>
-              Besides the main tech stack of Next, TypeScript and Chakra UI,
-              this template also comes with{' '}
-              <Link
-                href="https://prettier.io"
-                isExternal
-                textDecoration="underline"
-              >
+              Besides the main tech stack of Next, TypeScript and Chakra UI, this template also
+              comes with{' '}
+              <Link href="https://prettier.io" isExternal textDecoration="underline">
                 Prettier
               </Link>
               ,{' '}
-              <Link
-                href="https://eslint.org/"
-                isExternal
-                textDecoration="underline"
-              >
+              <Link href="https://eslint.org/" isExternal textDecoration="underline">
                 ESLint
               </Link>
               ,{' '}
@@ -207,61 +176,37 @@ function Home() {
                 pretty-quick
               </Link>{' '}
               ,{' '}
-              <Link
-                href="https://typicode.github.io/husky"
-                isExternal
-                textDecoration="underline"
-              >
+              <Link href="https://typicode.github.io/husky" isExternal textDecoration="underline">
                 Husky
               </Link>{' '}
               ,
-              <Link
-                href="https://jestjs.io/"
-                isExternal
-                textDecoration="underline"
-              >
+              <Link href="https://jestjs.io/" isExternal textDecoration="underline">
                 Jest
               </Link>
               , and{' '}
-              <Link
-                href="https://testing-library.com/"
-                isExternal
-                textDecoration="underline"
-              >
+              <Link href="https://testing-library.com/" isExternal textDecoration="underline">
                 Testing Library
               </Link>
               .
             </Text>
             <Text>
-              Pre-configured with sensible defaults provided by the community or
-              the creators of the tools.
+              Pre-configured with sensible defaults provided by the community or the creators of the
+              tools.
             </Text>
           </Stack>
         </Container>
         <Divider />
         <Text textAlign="center">
           Made with ✨ by{' '}
-          <Link
-            href="https://www.kahlillechelt.com"
-            isExternal
-            textDecoration="underline"
-          >
+          <Link href="https://www.kahlillechelt.com" isExternal textDecoration="underline">
             Kahlil Lechelt
           </Link>{' '}
           &bull;{' '}
-          <Link
-            href="https://github.com/kahlil/dark"
-            isExternal
-            textDecoration="underline"
-          >
+          <Link href="https://github.com/kahlil/dark" isExternal textDecoration="underline">
             github/kahlil/dark
           </Link>{' '}
           &bull;{' '}
-          <Link
-            href="https://twitter.com/kahliltweets"
-            isExternal
-            textDecoration="underline"
-          >
+          <Link href="https://twitter.com/kahliltweets" isExternal textDecoration="underline">
             @kahliltweets
           </Link>
         </Text>
