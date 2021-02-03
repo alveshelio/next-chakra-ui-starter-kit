@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Button, useColorMode, Box, useColorModeValue } from '@chakra-ui/react'
+import { Button, useColorMode, Box, useColorModeValue } from '@chakra-ui/react'
 import { FiMoon, FiSun } from 'react-icons/fi'
 
 const ToggleTheme = (): React.ReactElement => {
@@ -8,16 +8,14 @@ const ToggleTheme = (): React.ReactElement => {
   // we need to handle the color
   const iconColor = useColorModeValue('gray.700', 'gray.200' + '00')
   return (
-    <Flex justify="flex-end" width="100%">
-      <Button variant="ghost" onClick={toggleColorMode} size="sm" mt={8}>
-        <Box
-          as={colorMode === 'light' ? FiMoon : FiSun}
-          size="24px"
-          color={iconColor}
-          data-cy="theme-toggle"
-        />
-      </Button>
-    </Flex>
+    <Button variant="ghost" onClick={toggleColorMode} size="sm">
+      <Box
+        as={colorMode === 'light' ? FiMoon : FiSun}
+        size="24px"
+        color={iconColor}
+        data-cy="theme-toggle"
+      />
+    </Button>
   )
 }
 
