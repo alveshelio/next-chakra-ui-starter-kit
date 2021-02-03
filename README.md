@@ -14,9 +14,7 @@
 ## Getting Started
 
 1. Generate a repository with this template by clicking on the "Use this template" button on the top right or on
-   [https://github.com/alveshelio/next-chakra-ui-starter-kit/generate]https://github.com/alveshelio/next-chakra-ui-starter-kit/generate)
-   [github.
-   com/alveshelio/next-chakra-ui-starter-kit](https://github.com/alveshelio/next-chakra-ui-starter-kit/generate)
+   [github.com/alveshelio/next-chakra-ui-starter-kit](https://github.com/alveshelio/next-chakra-ui-starter-kit/generate)
 2. Clone your new repository
 3. Install dependencies `yarn`
 4. Start the server `yarn dev`
