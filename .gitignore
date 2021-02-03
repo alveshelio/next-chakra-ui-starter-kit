@@ -35,3 +35,6 @@ yarn-error.log*
 
 # IDE
 .idea
+
+# NYC
+.nyc_output
