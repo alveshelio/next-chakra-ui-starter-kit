@@ -21,12 +21,11 @@ import {
   Divider,
 } from '@chakra-ui/react'
 
-import ToggleTheme from 'src/modules/header/ToggleTheme'
+import Layout from 'src/modules/layout/Layout'
 
 function Home() {
   return (
-    <Container>
-      <ToggleTheme />
+    <Layout>
       <VStack my={24} spacing={12}>
         <Heading as="h1" fontSize="9xl" textAlign="center" data-cy="dark">
           Dark
@@ -224,7 +223,7 @@ function Home() {
           </Link>
         </Text>
       </VStack>
-    </Container>
+    </Layout>
   )
 }
 
