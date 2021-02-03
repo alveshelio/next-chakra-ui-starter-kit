@@ -4,6 +4,6 @@ describe('Home Page', () => {
   })
 
   it('checks the page loads correctly and Dark is present', () => {
-    cy.get('h1').should('contain.text', 'Dark')
+    cy.dataCy('dark').should('contain.text', 'Dark')
   })
 })
