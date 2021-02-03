@@ -10,7 +10,12 @@ const ToggleTheme = (): React.ReactElement => {
   return (
     <Flex justify="flex-end" width="100%">
       <Button variant="ghost" onClick={toggleColorMode} size="sm" mt={8}>
-        <Box as={colorMode === 'light' ? FiMoon : FiSun} size="24px" color={iconColor} />
+        <Box
+          as={colorMode === 'light' ? FiMoon : FiSun}
+          size="24px"
+          color={iconColor}
+          data-cy="theme-toggle"
+        />
       </Button>
     </Flex>
   )
