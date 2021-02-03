@@ -21,11 +21,14 @@ import {
   Divider,
 } from '@chakra-ui/react'
 
+import ToggleTheme from 'src/modules/header/ToggleTheme'
+
 function Home() {
   return (
     <Container>
+      <ToggleTheme />
       <VStack my={24} spacing={12}>
-        <Heading as="h1" fontSize="9xl" textAlign="center">
+        <Heading as="h1" fontSize="9xl" textAlign="center" data-cy="dark">
           Dark
         </Heading>
         <Text fontSize="3xl" textAlign="center">
@@ -78,14 +81,17 @@ function Home() {
 
         <Container>
           <Heading as="h3" fontSize="xl" mb={4} textAlign="center">
-            Chakra + Next = ❤️
+            Chakra + Next ={' '}
+            <span role="img" aria-label="heart">
+              ❤️
+            </span>
           </Heading>
           <Stack>
             <Text>
               After getting started with this GitHub repo template you have Chakra UI ready to go
               and configured for Next.js.
             </Text>
-            <Text>The dark theme is configured to be the inital color mode.</Text>
+            <Text>The dark theme is configured to be the initial color mode.</Text>
             <Text>
               The <em>full arsenal</em> of Chakra UI's features and components is at your disposal
               in this Next.js app and configurable to your wishes.
@@ -154,7 +160,10 @@ function Home() {
 
         <Container>
           <Heading as="h3" fontSize="xl" mb={4} textAlign="center">
-            Other Tech 🦾
+            Other Tech{' '}
+            <span role="img" aria-label="robot-harm">
+              🦾
+            </span>
           </Heading>
           <Stack>
             <Text>
@@ -197,7 +206,11 @@ function Home() {
         </Container>
         <Divider />
         <Text textAlign="center">
-          Made with ✨ by{' '}
+          Made with{' '}
+          <span role="img" aria-label="sparkles">
+            ✨
+          </span>{' '}
+          by{' '}
           <Link href="https://www.kahlillechelt.com" isExternal textDecoration="underline">
             Kahlil Lechelt
           </Link>{' '}
