@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "e2e:test": "start-server-and-test dev 3000 cypress:open",
+    "cypress:open": "cypress open",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci --coverage"
@@ -48,9 +50,12 @@
     "yarn": "1.22.10"
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^3.9.2",
+    "cypress": "^6.4.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "start-server-and-test": "^1.12.0"
   }
 }
