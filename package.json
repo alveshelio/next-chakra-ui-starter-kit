@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "e2e": "start-server-and-test dev 3000 cypress:open",
     "coverage": "nyc yarn run e2e",
