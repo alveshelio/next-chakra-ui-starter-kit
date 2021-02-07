@@ -6,7 +6,6 @@ import MenuItem from 'src/modules/header/navigation/MenuItem'
 import MenuToggle from 'src/modules/header/navigation/MenuToggle'
 import Navigation from 'src/modules/header/navigation/Navigation'
 import ToggleTheme from 'src/modules/header/ToggleTheme'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
 const Header = (): React.ReactElement => {
   const [isOpen, setIsOpen] = useState(false)
@@ -23,8 +22,8 @@ const Header = (): React.ReactElement => {
           <MenuItem to="/" variant="ghost">
             Home
           </MenuItem>
-          <MenuItem to="/" variant="ghost">
-            How It works
+          <MenuItem to="/ui-examples" variant="ghost">
+            Ui Examples
           </MenuItem>
           <MenuItem to="/" variant="ghost">
             Who we are

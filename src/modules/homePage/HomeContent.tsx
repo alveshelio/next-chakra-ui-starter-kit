@@ -1,22 +1,12 @@
 import {
-  Avatar,
-  Badge,
-  Box,
-  Button,
   Code,
   Container,
   Divider,
-  Flex,
   Heading,
   Link,
   ListItem,
   OrderedList,
-  Slider,
-  SliderFilledTrack,
-  SliderThumb,
-  SliderTrack,
   Stack,
-  Switch,
   Text,
   useColorMode,
   VStack,
@@ -126,72 +116,31 @@ const HomeContent = (): React.ReactElement => {
               How to get started
             </Heading>
             <Text>
-              You can use this <strong>starter kig</strong> in a couple of different ways.
+              You can use this <strong>starter kit</strong> in a couple of different ways.
             </Text>
             <Text>
-              You can use this starter kit as a template for <strong>NextJs</strong>
+              You can use this starter kit as an example for <strong>NextJs</strong>
+              <br />
+              <Code>
+                yarn create next-app my-app --example
+                https://github.com/alveshelio/next-chakra-ui-starter-kit
+              </Code>
             </Text>
-            <Text>The dark theme is configured to be the initial color mode.</Text>
             <Text>
-              The <em>full arsenal</em> of Chakra UI's features and components is at your disposal
-              in this Next.js app and configurable to your wishes.
-            </Text>
-
-            <Text pb={2}>Oh, look! Chakra UI buttons:</Text>
-            <Stack pb={2} spacing={4} direction="row" align="center">
-              <Button size="xs">Button</Button>
-              <Button colorScheme="teal" size="sm">
-                Button
-              </Button>
-              <Button colorScheme="purple" size="md">
-                Button
-              </Button>
-              <Button colorScheme="pink" size="lg">
-                Button
-              </Button>
-            </Stack>
-
-            <Text py={2}>Woah! A Chakra UI slider:</Text>
-            <Slider pb={2} aria-label="slider-ex-2" colorScheme="pink" defaultValue={30}>
-              <SliderTrack>
-                <SliderFilledTrack />
-              </SliderTrack>
-              <SliderThumb />
-            </Slider>
-
-            <Text pt={4} pb={2}>
-              Blimey! Chakra UI switches:
-            </Text>
-            <Stack pb={2} align="center" direction="row">
-              <Switch size="sm" colorScheme="teal" />
-              <Switch size="md" colorScheme="purple" />
-              <Switch size="lg" colorScheme="pink" />
-            </Stack>
-
-            <Text py={2}>Damn, yo! Composed Chakra UI components for displaying data:</Text>
-            <Flex pb={2}>
-              <Avatar src="https://bit.ly/sage-adebayo" />
-              <Box ml="3">
-                <Text fontWeight="bold">
-                  Segun Adebayo
-                  <Badge ml="1" colorScheme="green">
-                    New
-                  </Badge>
-                </Text>
-                <Text fontSize="sm">UI Engineer, creator of Chakra UI</Text>
-              </Box>
-            </Flex>
-
-            <Text py={2}>
-              See the code for the examples above in the{' '}
+              You can generate a new Repo from this one with
+              <br />
               <Link
-                href="https://github.com/kahlil/dark/blob/main/src/pages/index.tsx"
-                isExternal
+                href="https://github.com/alveshelio/next-chakra-ui-starter-kit/generate"
+                isExternal={true}
                 textDecoration="underline"
               >
-                source code
+                github.com/alveshelio/next-chakra-ui-starter-kit
               </Link>
-              .
+            </Text>
+            <Text>
+              Or you can clone this repo
+              <br />
+              <Code>git clone https://github.com/alveshelio/next-chakra-ui-starter-kit my-app</Code>
             </Text>
           </Stack>
         </Container>
