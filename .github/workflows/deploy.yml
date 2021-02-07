@@ -18,6 +18,11 @@ jobs:
           node-version: 12
       - run: npm install -g yarn
       - run: yarn install --frozen-lockfile
+      - uses: actions/checkout@v1
+      - uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          headless: true
       - run: yarn build
 
       - name: Configure AWS Credentials
