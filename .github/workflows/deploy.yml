@@ -18,7 +18,7 @@ jobs:
           node-version: 12
       - run: npm install -g yarn
       - run: yarn install --frozen-lockfile
-      - uses: cypress-io/github-action@v1
+      - uses: cypress-io/github-action@v2
         with:
           command: npm run e2e:ci
           browser: chrome
