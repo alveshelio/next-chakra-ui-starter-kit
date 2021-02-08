@@ -38,3 +38,7 @@ yarn-error.log*
 
 # NYC
 .nyc_output
+
+# Cypress
+cypress/screenshots
+cypress/videos
