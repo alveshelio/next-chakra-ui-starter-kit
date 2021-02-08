@@ -3,6 +3,9 @@ on:
   push:
   pull_request:
     branches: [main]
+
+  workflow_dispatch:
+
 jobs:
   basic-ubuntu-16:
     runs-on: ubuntu-latest
