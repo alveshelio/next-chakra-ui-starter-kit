@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-node:latest
+      - uses: actions/setup-node@master
         with:
           node-version: 14
       - run: npm install -g yarn
@@ -19,7 +19,7 @@ jobs:
       - run: yarn build
 
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials:latest
+        uses: aws-actions/configure-aws-credentials@master
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
