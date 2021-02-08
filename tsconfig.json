@@ -15,6 +15,7 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
+      "@modules/*": ["src/modules/*"],
       "@theme/*": ["src/theme/*"]
     }
   },

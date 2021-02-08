@@ -12,7 +12,7 @@ import {
   VStack,
 } from '@chakra-ui/react'
 import React from 'react'
-import Layout from 'src/modules/layout/Layout'
+import Layout from '@modules/layout/Layout'
 
 const HomeContent = (): React.ReactElement => {
   const { colorMode } = useColorMode()
@@ -45,10 +45,31 @@ const HomeContent = (): React.ReactElement => {
               Linting with{' '}
               <Link href="https://eslint.org/" isExternal textDecoration="underline">
                 ESLint
-              </Link>
+              </Link>{' '}
+              &{' '}
               <Link href="https://prettier.io" isExternal textDecoration="underline">
                 Prettier
               </Link>{' '}
+            </ListItem>
+            <ListItem>
+              Code Analysis with{' '}
+              <Link
+                href="https://github.com/github/super-linter"
+                isExternal
+                textDecoration="underline"
+              >
+                Github super-linter
+              </Link>
+            </ListItem>
+            <ListItem>
+              CI/CD with{' '}
+              <Link
+                href="https://github.com/features/actions"
+                isExternal
+                textDecoration="underline"
+              >
+                Github Actions
+              </Link>
             </ListItem>
             <ListItem>
               <Link href="https://chakra-ui.com" isExternal textDecoration="underline">
@@ -85,17 +106,34 @@ const HomeContent = (): React.ReactElement => {
                 Cypress
               </Link>
             </ListItem>
-            <ListItem>
-              CI/CD with{' '}
-              <Link
-                href="https://github.com/features/actions"
-                isExternal
-                textDecoration="underline"
-              >
-                Github Actions
-              </Link>
-            </ListItem>
           </OrderedList>
+        </Container>
+
+        <Divider />
+
+        <Container>
+          <Heading as="h3" fontSize="xl" mb={4} textAlign="center">
+            How to remove code linting with Github super-linter?
+          </Heading>
+          <Text>
+            If you don't wish to analyse your code with super-linter you can simply remove file{' '}
+            <Code>.github/workflows/linter.yml</Code>
+          </Text>
+          <Heading as="h3" fontSize="xl" my={4} textAlign="center">
+            You're not using NextJS as a Static Site Generator (SSG)
+          </Heading>
+          <Text>
+            First you need to change the script <Code>build</Code> in <Code>package.json</Code> to{' '}
+            <Code>"build": "next build"</Code>. <br />
+            Then you need to remove file remove file <Code>.github/workflows/deploy.yml</Code>
+          </Text>
+          <Heading as="h3" fontSize="xl" my={4} textAlign="center">
+            I'm deploying my site to another provider other than <strong>Vercel</strong>
+          </Heading>
+          <Text>
+            In that case you need to updated file <Code>.github/workflows/deploy.yml</Code> to suite
+            your platform needs.
+          </Text>
         </Container>
 
         <Divider />

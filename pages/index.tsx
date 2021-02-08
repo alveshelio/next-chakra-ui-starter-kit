@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeContent from 'src/modules/homePage/HomeContent'
+import HomeContent from '@modules/homePage/HomeContent'
 
 function Home(): React.ReactElement {
   return <HomeContent />
