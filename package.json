@@ -16,7 +16,7 @@
     "test:ci": "jest --ci --coverage"
   },
   "dependencies": {
-    "@chakra-ui/icons": "1.0.3",
+    "@chakra-ui/icons": "1.0.5",
     "@chakra-ui/react": "1.1.6",
     "@emotion/react": "11.1.4",
     "@emotion/styled": "11.0.0",
