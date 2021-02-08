@@ -1,4 +1,4 @@
-name: Cypress
+name: Cypress Test
 on:
   push:
   pull_request:
@@ -7,19 +7,20 @@ on:
   workflow_dispatch:
 
 jobs:
-  basic-ubuntu-16:
+  cypress-test:
+    name: Run on Chrome 87
     runs-on: ubuntu-latest
+    container: cypress/browsers:node12.18.3-chrome87-ff82
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-node@master
-        with:
-          node-version: 14
-      - run: npm install -g yarn
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
 
-      - name: Cypress tests
-        uses: cypress-io/github-action@master
-        with:
-          command: npm run e2e:ci
-          wait-on: 'http://localhost:3000'
+      - name: Install Cypress and verify
+        run: |
+          npm ci
+          ($npm bin)/cypress verify
+
+      - name: Run cypress tests
+        run: npm run test:chrome
+        continue-on-error: false
+
+      - name: Copy test execution videos and screenshots
