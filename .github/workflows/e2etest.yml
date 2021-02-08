@@ -10,7 +10,6 @@ jobs:
   basic-ubuntu-16:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
         with:
