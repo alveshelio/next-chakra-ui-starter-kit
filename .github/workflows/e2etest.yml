@@ -15,3 +15,6 @@ jobs:
 
       - name: Cypress tests
         uses: cypress-io/github-action@master
+        with:
+          command: npm run e2e:ci
+          wait-on: 'http://localhost:3000'
