@@ -42,3 +42,6 @@ yarn-error.log*
 # Cypress
 cypress/screenshots
 cypress/videos
+
+# super-linter
+super-linter.log
