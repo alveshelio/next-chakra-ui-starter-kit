@@ -19,5 +19,5 @@ jobs:
       - run: yarn install --frozen-lockfile
 
       - name: Run cypress tests
-        run: npm run test:chrome
+        run: npm run e2e:ci
         continue-on-error: false
