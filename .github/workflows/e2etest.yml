@@ -1,0 +1,14 @@
+name: Cypress
+on:
+  push:
+  pull_request:
+    branches: [main]
+jobs:
+  basic-ubuntu-16:
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Cypress tests
+        uses: cypress-io/github-action@v2
