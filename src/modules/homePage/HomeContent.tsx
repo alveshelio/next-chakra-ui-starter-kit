@@ -72,6 +72,7 @@ const HomeContent = (): React.ReactElement => {
               </Link>
             </ListItem>
             <ListItem>
+              Ui Library{' '}
               <Link href="https://chakra-ui.com" isExternal textDecoration="underline">
                 Chakra UI
               </Link>
