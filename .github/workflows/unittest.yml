@@ -16,7 +16,6 @@ jobs:
           node-version: 14
       - run: npm install -g yarn
       - run: yarn install --frozen-lockfile
-      - run: yarn build
 
       - name: Run Jest
         uses: stefanoeb/jest-action@master
