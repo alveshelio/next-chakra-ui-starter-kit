@@ -1,6 +1,3 @@
-const tsconfig = require('./tsconfig.json')
-const moduleNameMapper = require('tsconfig-paths-jest')(tsconfig)
-
 module.exports = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testPathIgnorePatterns: [
@@ -11,5 +8,8 @@ module.exports = {
     '<rootDir>/coverage/',
     '<rootDir>/.nyc_output/',
   ],
-  moduleNameMapper,
+  moduleNameMapper: {
+    '@modules/(.*)': '<rootDir>/src/modules/$1',
+    '@theme/(.*)': '<rootDir>/src/theme/$1',
+  },
 }
