@@ -1,15 +1,13 @@
 # A Light / Dark Themed Next.js Starter Kit
 
-> An opinionated, light-dark-themed **Next.js** & **Chakra UI** GitHub repository **starter kit**.
+> Starting a NextJS project can be quite time-consuming and tedious. So why waste your precious time when you can have pretty much everything you need to start a new
+> **Next.js** project packed in this **Starter Kit**
 
 > Thank you to [Kahlil](https://github.com/kahlil/dark) for the inspiration. I've started by forking the repo and
 > ended up making quite some changes.
 >
 > Added eslint and prettier from
 > [paulintrognon.fr](https://paulintrognon.fr/blog/typescript-prettier-eslint-next-js).
-
-> Starting a NextJS project can be quite time-consuming and tedious. So why waste your precious time when you can have pretty much everything you need to start a new
-> **Next.js** project packed in this **Starter Kit**
 
 ## Included in this Starter Kit
 
