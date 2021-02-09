@@ -39,6 +39,32 @@ You can use this **Starter Kit** in a couple of different ways.
 
 Please refer to the respective docs (linked above) in order to learn about these technologies.
 
+## Documentation
+
+### CI/CD
+
+This starter kit is using Github Actions to handle the **CI / CD**. Whenever we commit to a branch or main we are
+going to run the linter, unit tests and e2e tests. And when we push to main we are going to publish the site to
+Amazon S3.
+If you are using a different **CI / CD** you'll need to remove all the files in directory `.github/workflows`
+
+#### How to remove code linting with Github super-linter?
+
+If you don't wish to analyse your code with super-linter you can simply remove file `.github/workflows/linter.yml`
+
+#### How to remove code linting with Github super-linter?
+
+You're not using NextJS as a Static Site Generator (SSG)
+First you need to change the script `build` in `package.json` to
+`"build": "next build"`. <br />
+Then you need to remove file `.github/workflows/deploy.yml`
+
+#### I'm deploying my site to another provider other than **Vercel**
+
+The Github action configured in this starter kit will deploy a static site to an Amazon S3 bucket, if you want to
+deploy to another provider, in that case you need to updated
+file `. github/workflows/deploy.yml` to suite your platform needs.
+
 ## Warning
 
 You could be tempted to use `const { colorMode, toggleColorMode } = useColorMode()` to toggle the theme color
