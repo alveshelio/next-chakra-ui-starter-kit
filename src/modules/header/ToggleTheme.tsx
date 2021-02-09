@@ -1,7 +1,7 @@
 import React from 'react'
 import { useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { FiMoon, FiSun } from 'react-icons/fi'
-import ToggleButton from 'src/modules/common/togglebutton/ToggleButton'
+import ToggleButton from '@modules/common/togglebutton/ToggleButton'
 
 const ToggleTheme = (): React.ReactElement => {
   const { colorMode, toggleColorMode } = useColorMode()

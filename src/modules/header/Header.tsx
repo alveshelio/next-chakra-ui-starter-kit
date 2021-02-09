@@ -1,11 +1,11 @@
 import { Grid } from '@chakra-ui/react'
 import React, { useState } from 'react'
-import Logo from 'src/modules/header/logo/Logo'
-import Links from 'src/modules/header/navigation/Links'
-import MenuItem from 'src/modules/header/navigation/MenuItem'
-import MenuToggle from 'src/modules/header/navigation/MenuToggle'
-import Navigation from 'src/modules/header/navigation/Navigation'
-import ToggleTheme from 'src/modules/header/ToggleTheme'
+import Logo from '@modules/header/logo/Logo'
+import Links from '@modules/header/navigation/Links'
+import MenuItem from '@modules/header/navigation/MenuItem'
+import MenuToggle from '@modules/header/navigation/MenuToggle'
+import Navigation from '@modules/header/navigation/Navigation'
+import ToggleTheme from '@modules/header/ToggleTheme'
 
 const Header = (): React.ReactElement => {
   const [isOpen, setIsOpen] = useState(false)

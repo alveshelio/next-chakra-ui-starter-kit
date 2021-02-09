@@ -1,6 +1,6 @@
 import React from 'react'
 import { useColorModeValue } from '@chakra-ui/react'
-import ToggleButton from 'src/modules/common/togglebutton/ToggleButton'
+import ToggleButton from '@modules/common/togglebutton/ToggleButton'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
 interface MenuToggleProps {
