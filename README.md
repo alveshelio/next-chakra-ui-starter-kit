@@ -1,39 +1,41 @@
-# Dark
+# A Light / Dark Themed Next.js Starter Kit
 
-> An opinionated, light-dark-themed Next.js & Chakra UI GitHub repository template.
+> An opinionated, light-dark-themed **Next.js** & **Chakra UI** GitHub repository **starter kit**.
 
-> This is a NextJS with Chakra-ui starter kit
->
 > Thank you to [Kahlil](https://github.com/kahlil/dark) for the inspiration. I've started by forking the repo and
 > ended up making quite some changes.
 >
-> I've added eslint and prettier from
+> Added eslint and prettier from
 > [paulintrognon.fr](https://paulintrognon.fr/blog/typescript-prettier-eslint-next-js).
-> I've also added [Cypress](https://cypress.io) for **E2E** tests and code coverage with **Istanbul** and **NYC**.
+
+> Starting a NextJS project can be quite time-consuming and tedious. So why waste your precious time when you can have pretty much everything you need to start a new
+> **Next.js** project packed in this **Starter Kit**
+
+## Included in this Starter Kit
+
+1. Type System with [Typescript](https://www.typescriptlang.org/)
+2. Linting with [Eslint](https://eslint.org/) & [Prettier](https://prettier.io)
+3. Code Analysis with [Github super-linter](https://github.com/github/super-linter)
+4. Ui Library [Chakra UI](https://chakra-ui.com)
+5. Pre-commit hooks with [Pretty Quic](https://github.com/azz/pretty-quic) & [Husky](https://typicode.github.io/husk)
+6. Unit Testing with [Jest](https://jestjs.io/) & [Texting Library](https://testing-library.com/)
+7. E2E Testing with [Cypress](https://cypress.io)
+8. CI/CD with [Github Actions](https://github.com/features/actions)
 
 ## Getting Started
 
-1. Generate a repository with this template by clicking on the "Use this template" button on the top right or on
+You can use this **Starter Kit** in a couple of different ways.
+
+1. You can use this starter kit as an example for **NextJs**
+   `yarn create next-app my-app --example https://github.com/alveshelio/next-chakra-ui-starter-kit`
+2. You can generate a new Repo from this one with
    [github.com/alveshelio/next-chakra-ui-starter-kit](https://github.com/alveshelio/next-chakra-ui-starter-kit/generate)
-2. Clone your new repository
-3. Install dependencies `yarn`
-4. Start the server `yarn dev`
-5. Hit the ground running with Next.js, TypeScript & Chakra UI with the dark theme as the default
-
-## Documentation
-
-The tech stack of this template includes
-
-- [Next.js](https://nextjs.org)
-- [Chakra UI](https://chakra-ui.com)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Prettier](https://prettier.io/)
-- [ESLint](https://eslint.org/)
-- [pretty-quick](https://github.com/azz/pretty-quick)
-- [Husky](https://typicode.github.io/husky)
-- [Jest](https://jestjs.io/)
-- [Testing Library](https://testing-library.com/)
-- [Cypress](https://cypress.io)
+3. You can clone this repo
+   `git clone https://github.com/alveshelio/next-chakra-ui-starter-kit my-app`
+4. `cd my-app`
+5. Install dependencies `yarn install`
+6. Start the server `yarn dev`
+7. Hit the ground running with Next.js, TypeScript & Chakra UI
 
 Please refer to the respective docs (linked above) in order to learn about these technologies.
 
